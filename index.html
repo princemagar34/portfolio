@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prince Paija Magar | Cybersecurity</title>
-<meta name="description" content="Prince Paija Magar, cybersecurity professional in Kathmandu. Email security, threat detection and network defence. Builder of Genjutsu, an AI phishing detection and honeypot system.">
+<title>Prince Paija Magar | Networking, Web &amp; Cybersecurity</title>
+<meta name="description" content="Prince Paija Magar, Kathmandu. Networking, web design and cybersecurity: email security, threat detection and network defence. Builder of Genjutsu, an AI phishing detection and honeypot system.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://princepaijamagar.com.np/">
-<meta property="og:title" content="Prince Paija Magar | Cybersecurity">
+<meta property="og:title" content="Prince Paija Magar | Networking, Web &amp; Cybersecurity">
 <meta property="og:description" content="Email security, threat detection and network defence. Builder of Genjutsu, an AI phishing detection and honeypot system.">
 <meta property="og:image" content="https://princepaijamagar.com.np/poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -98,12 +98,21 @@ main{position:relative;z-index:1}
 .reach dd{margin:2px 0 0;font-family:var(--disp);font-weight:var(--dw);font-size:clamp(19px,2.2vw,24px);overflow-wrap:anywhere}
 .reach dd a{color:var(--ink);text-decoration-color:var(--acc)}
 .links{display:flex;flex-wrap:wrap;gap:10px}
+.shot{margin:22px 0 4px}
+.shot img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 18px 40px -24px var(--shadow)}
+.shot figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+.card h3.part{margin:28px 0 8px;font-size:19px}
+.steps{margin:8px 0 0;padding-left:22px}
+.steps li{margin:0 0 9px;color:var(--muted);font-size:15.5px}
+.steps li b{color:var(--ink);font-weight:600}
+pre.log{background:#16212a;color:#e6edf1;border-radius:12px;padding:14px 16px;margin:14px 0 4px;font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+pre.log .k{color:#8fb4ff}
 footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted);font-size:14px}
 @media(max-width:700px){.band{min-height:auto;padding:70vh 14px 40px}.band.hero{min-height:100vh;padding:0 16px 56px}.row{grid-template-columns:minmax(0,1fr);gap:4px}.facts{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
-<video id="bgv" src="glacier.mp4" poster="poster.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+<video id="bgv" data-src="glacier.mp4" poster="poster.jpg" muted playsinline preload="none" aria-hidden="true"></video>
 <div class="veil"></div>
 <canvas id="gl" aria-hidden="true"></canvas>
 <header class="site-header">
@@ -112,7 +121,7 @@ footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted)
     <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
   </div>
   <nav class="menu-card" id="site-menu" aria-label="Main">
-    <ul><li><a href="#about">About</a></li><li><a href="#genjutsu">Genjutsu</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#contact">Contact</a></li></ul>
+    <ul><li><a href="#about">About</a></li><li><a href="#genjutsu">Genjutsu</a></li><li><a href="#inside-genjutsu">Case studies</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#contact">Contact</a></li></ul>
     <a class="btn menu-cta" href="#contact">Get in touch</a>
   </nav>
 </header>
@@ -120,14 +129,14 @@ footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted)
 <section class="band hero" id="top" data-s>
   <div>
     <h1>Prince Paija Magar</h1>
-    <p class="tag">I build systems that catch attackers before they reach your inbox.</p>
+    <p class="tag">I design it, build it, connect it and secure it.</p>
   </div>
 </section>
 
 <section class="band r" id="about" data-s><div class="card">
   <h2>Networks first, then the people who attack them.</h2>
   <p>I am a cybersecurity professional based in Kathmandu, focused on email security, threat detection and network defence. My work combines secure system design with hands-on offensive testing, with the aim of stopping attacks before they reach users.</p>
-  <p>My experience is grounded in building production-style systems. I designed and developed Genjutsu, a nine-layer phishing detection and honeypot platform deployed on Google Cloud and Cloudflare, and have built applied projects in AI, IoT and web development. I am proficient with industry tools including Nmap, Wireshark, Burp Suite and Metasploit, and hold four AWS Academy certifications, including Cloud Security Foundations, along with RCNA Routing &amp; Switching and WLAN.</p>
+  <p>My experience is grounded in building production-style systems. I designed and developed Genjutsu, a nine-layer phishing detection and honeypot platform for Gmail, Outlook and IMAP mailboxes, running on Render and Cloudflare, and have built applied projects in AI, IoT and web development. I am proficient with industry tools including Nmap, Wireshark, Burp Suite and Metasploit, and hold four AWS Academy certifications, including Cloud Security Foundations, along with RCNA Routing &amp; Switching and WLAN.</p>
   <p>I am currently pursuing an MBA in International Business and Project Management to complement my technical background. My goal is to contribute to a security operations team, and in the longer term to build security products and capability for organisations in Nepal.</p>
   <div class="facts">
     <div><b>First Class</b><span>BSc (Hons), Networking &amp; IT Security</span></div>
@@ -139,16 +148,68 @@ footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted)
 
 <section class="band" id="genjutsu" data-s><div class="card">
   <h2>Genjutsu</h2>
-  <p class="muted">An AI-powered phishing detection and honeypot system for Gmail. It scans every incoming email through nine layers of checks, flags dangerous messages in real time, and replies to scammers with an AI decoy that draws out their intent.</p>
+  <p class="muted">An AI-powered phishing detection and honeypot system for Gmail, Outlook and any IMAP mailbox. It scans every incoming email through nine layers of checks, flags dangerous messages in real time, and replies to scammers with an AI decoy that draws out their intent.</p>
   <ul class="pipe" aria-label="What every email passes through">
-    <li>Gmail API, OAuth 2.0</li><li>SPF / DKIM / DMARC</li><li>Naive Bayes classifier</li><li>NLP signals</li><li>Google Safe Browsing</li><li>URL scanning</li><li>Attachment scanning</li><li class="trap">“Nami” AI honeypot</li><li>Telegram alerts</li>
+    <li>Gmail API &amp; Microsoft Graph (OAuth 2.0), IMAP</li><li>SPF / DKIM / DMARC</li><li>Naive Bayes classifier</li><li>NLP signals</li><li>Google Safe Browsing</li><li>URL &amp; QR code scanning</li><li>Attachment content scanning</li><li>Shared threat feed</li><li class="trap">“Nami” AI honeypot</li><li>Telegram alerts</li>
   </ul>
   <div class="trio">
-    <div><h3>Detect</h3><p>Every incoming mail is checked for spoofed senders, poisoned links, risky attachments and scam language, then scored.</p></div>
-    <div><h3>Deceive</h3><p>Nami, a LLaMA-3.3-70B persona on Groq, replies to scammers and wastes their time while the system learns from them.</p></div>
-    <div><h3>Govern</h3><p>A three-role admin portal with PDF reports, running on Cloud Run, Cloudflare Workers and PostgreSQL.</p></div>
+    <div><h3>Detect</h3><p>Every incoming mail is checked for spoofed senders, poisoned links, hidden QR codes, risky attachments and scam language, then scored.</p></div>
+    <div><h3>Deceive</h3><p>Nami, a GPT-OSS-120B persona on Groq, replies to scammers and wastes their time while the system learns from them.</p></div>
+    <div><h3>Govern</h3><p>A three-role admin portal with organization dashboards and PDF reports, running on Render, Cloudflare Workers and PostgreSQL.</p></div>
   </div>
   <p style="margin:26px 0 0"><a class="btn" href="https://genjutsu.org">Visit genjutsu.org</a></p>
+</div></section>
+
+<section class="band r" id="inside-genjutsu"><div class="card">
+  <h2>Inside Genjutsu</h2>
+  <p class="muted">How a suspicious email moves through the system, what testing showed, and how the results reach a SOC.</p>
+  <figure class="shot"><img src="shots/genjutsu-dashboard.jpg" width="800" height="460" loading="lazy" alt="Genjutsu dashboard showing 10 emails checked, 6 threats detected, a threat timeline and a breakdown of threat types"><figcaption>The live demo at genjutsu.org, running on sample emails.</figcaption></figure>
+  <h3 class="part">The pipeline</h3>
+  <ol class="steps">
+    <li><b>Sender:</b> SPF, DKIM and DMARC parsed from the real headers, plus look-alike domain checks.</li>
+    <li><b>Content:</b> phishing and urgency wording, NLP signals and a Naive Bayes classifier trained on scam and safe mail.</li>
+    <li><b>Links:</b> pattern checks and Google Safe Browsing, including links hidden in QR codes.</li>
+    <li><b>Attachments:</b> double extensions, risky file types and what is hidden inside the files.</li>
+    <li><b>Shared intelligence:</b> a global block list and a threat feed of attackers seen across Genjutsu users.</li>
+  </ol>
+  <p class="muted" style="font-size:15.5px">The final score decides what happens next: move to spam, alert on Telegram, or hand the sender to Nami.</p>
+  <figure class="shot"><img src="shots/genjutsu-threats.jpg" width="752" height="278" loading="lazy" alt="List of detected threats, each with a plain-English reason such as a phishing keyword or an urgency word"><figcaption>Every flag comes with a plain-English reason.</figcaption></figure>
+  <h3 class="part">Results</h3>
+  <div class="facts">
+    <div><b>56</b><span>testers answered the post-use survey</span></div>
+    <div><b>82%</b><span>rated their experience positively</span></div>
+    <div><b>75%</b><span>spotted a threat they had missed before</span></div>
+    <div><b>5 / 5</b><span>security tests passed: RBAC, XSS and auth</span></div>
+  </div>
+  <h3 class="part">Built for the SOC</h3>
+  <p class="muted" style="font-size:15.5px">Every detection exports straight into a SIEM: JSON lines for Splunk, Elastic or Wazuh, ArcSight CEF, or RFC 5424 syslog, tagged with MITRE ATT&amp;CK techniques and indicators of compromise.</p>
+  <pre class="log" aria-label="Sample CEF event"><span class="k">CEF:0|Genjutsu|Email Security|3.1|EMAIL-DANGEROUS|Dangerous email detected|9|</span>
+suser=service@paypa1-support.co msg=Your account has been limited
+cs1Label=mitre cs1=T1566.002
+cs2Label=reasons cs2=SPF: FAIL for paypa1-support.co; Lookalike domain of paypal.com; Phishing keyword: "verify your account"
+cs3Label=iocDomains cs3=paypa1-support.co request=https://paypa1-support.co/verify
+cn1Label=score cn1=94</pre>
+  <p class="muted" style="font-size:13.5px">A CEF event from Genjutsu's exporter for the demo PayPal look-alike, wrapped for reading.</p>
+</div></section>
+
+<section class="band" id="phish-lab"><div class="card">
+  <h2>Case study: phish_lab</h2>
+  <p class="muted">A credential-harvesting attack I built from scratch for my Ethical Hacking coursework, run end to end, then turned around to show how defenders catch it.</p>
+  <h3 class="part">The attack chain</h3>
+  <ol class="steps">
+    <li><b>Recon:</b> the target and their email address were found through open-source intelligence.</li>
+    <li><b>Weaponise:</b> Flask and Jinja2 clones of the Instagram, Facebook and Snapchat login pages, served over HTTPS through ngrok and hidden behind a shortened link.</li>
+    <li><b>Deliver:</b> a "suspicious login" warning sent with the Social-Engineer Toolkit, posing as Instagram Security.</li>
+    <li><b>Exploit:</b> a double-capture trick rejects the first password, so the victim types it twice. Both appear live on the attacker's dashboard.</li>
+    <li><b>Take over:</b> the stolen credentials log in and change the password, locking the owner out with no malware at all.</li>
+  </ol>
+  <h3 class="part">How a SOC catches it</h3>
+  <ol class="steps">
+    <li><b>At the mail gateway:</b> a "security alert" whose sender fails DMARC for the brand it claims, carrying a shortened link to a tunnelling domain.</li>
+    <li><b>In identity logs:</b> a sign-in from a new IP and device, followed within minutes by a password change, is a classic takeover pattern.</li>
+    <li><b>With users:</b> a login page that rejects a correct password once and then accepts it is a tell people can be trained to notice.</li>
+  </ol>
+  <p class="muted" style="font-size:15.5px;margin:18px 0 0">The full write-up also covers the legal side under Nepal's Electronic Transactions Act 2063. Genjutsu was built to stop exactly this kind of email.</p>
 </div></section>
 
 <section class="band r" id="projects" data-s><div class="card">
@@ -186,7 +247,7 @@ footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted)
   <p class="sub">Networking</p>
   <div class="tags"><span>Routing protocols</span><span>VLANs</span><span>IP addressing</span><span>ACLs</span><span>NAT / PAT</span><span>IPsec VPN</span><span>Cisco Packet Tracer</span></div>
   <p class="sub">Build</p>
-  <div class="tags"><span>Python</span><span>JavaScript</span><span>HTML / CSS</span><span>Node.js / Express</span><span>PostgreSQL</span><span>Docker</span><span>Git</span><span>Google Cloud Run</span><span>Cloudflare Workers</span><span>Firebase</span><span>ESP32</span><span>Figma</span></div>
+  <div class="tags"><span>Python</span><span>JavaScript</span><span>HTML / CSS</span><span>Node.js / Express</span><span>PostgreSQL</span><span>Docker</span><span>Git</span><span>Render</span><span>Google Cloud Run</span><span>Cloudflare Workers</span><span>Firebase</span><span>ESP32</span><span>Figma</span></div>
   <p class="sub">Certifications</p>
   <div class="tags"><span>AWS Academy Cloud Foundations</span><span>AWS Academy Cloud Security Foundations</span><span>AWS Academy Cloud Operations</span><span>AWS Academy Cloud Architecting</span><span>RCNA Routing &amp; Switching</span><span>RCNA WLAN</span><span>Web Monitoring Program</span></div>
 </div></section>
@@ -199,12 +260,11 @@ footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted)
     <div><dt>Phone</dt><dd><a href="tel:+9779706077264">+977 9706077264</a></dd></div>
     <div><dt>Location</dt><dd>Kathmandu, Nepal</dd></div>
   </dl>
-  <div class="links"><a class="btn" href="https://github.com/princemagar34">GitHub</a><a class="btn ghost" href="https://genjutsu.org">genjutsu.org</a></div>
+  <div class="links"><a class="btn" href="Prince_Paija_Magar_CV.pdf" download>Download CV</a><a class="btn" href="https://www.linkedin.com/in/prince-paija-magar-787768372">LinkedIn</a><a class="btn" href="https://github.com/princemagar34">GitHub</a><a class="btn ghost" href="https://genjutsu.org">genjutsu.org</a></div>
 </div></section>
 </main>
 <footer>© 2026 Prince Paija Magar</footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 {
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -231,11 +291,20 @@ hdr.querySelectorAll('.menu-card a').forEach(a => a.addEventListener('click', ()
 addEventListener('keydown', e => { if (e.key === 'Escape' && hdr.classList.contains('open')) { setMenu(false); mbtn.focus(); } });
 document.addEventListener('click', e => { if (!hdr.contains(e.target)) setMenu(false); });
 const bgv = document.getElementById('bgv');
+/* Cloudflare answers Range requests with the full file, so the browser can't seek a streamed video.
+   Load it into memory once and play from a local blob URL so scroll-scrubbing works. */
+/* Phones and data-saver connections get the still poster only: no 9 MB video, no 3D. */
+const conn = navigator.connection || {};
+const lite = matchMedia('(max-width:700px)').matches || conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '');
+if (!lite) fetch(bgv.dataset.src).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
+  bgv.addEventListener('loadedmetadata', () => onProg(target, secs.length - 1), {once:true});
+  bgv.src = URL.createObjectURL(b);
+}).catch(() => {});
 let unlocked = false;
-const unlock = () => { if (unlocked) return; unlocked = true; const p = bgv.play(); if (p) p.then(() => bgv.pause()).catch(() => {}); };
+const unlock = () => { if (unlocked || !bgv.src) return; unlocked = true; const p = bgv.play(); if (p) p.then(() => bgv.pause()).catch(() => {}); };
 addEventListener('touchstart', unlock, {once:true, passive:true}); addEventListener('pointerdown', unlock, {once:true});
 window.onProg = (f, n) => { if (!bgv.duration || bgv.seeking) return; const t = Math.min(bgv.duration - .05, f / n * bgv.duration); if (Math.abs(bgv.currentTime - t) > .04) bgv.currentTime = t; };
-if (!window.THREE) addEventListener('scroll', () => onProg(target, secs.length - 1), {passive:true});
+const scrubOnScroll = () => addEventListener('scroll', () => onProg(target, secs.length - 1), {passive:true});
 function build(T, scene, R){
   scene.background = null;
   scene.add(new T.HemisphereLight(0xffffff, 0xbfcad0, .85));
@@ -337,7 +406,8 @@ function build(T, scene, R){
 }
 
 
-if (window.THREE) {
+function startGL() {
+  if (!window.THREE) { scrubOnScroll(); return; }
   const T = THREE, cv = document.getElementById('gl');
   const R = new T.WebGLRenderer({canvas:cv, antialias:true, alpha:true});
   R.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -372,6 +442,13 @@ if (window.THREE) {
     R.render(scene, cam);
   }
   requestAnimationFrame(frame);
+}
+if (lite) document.getElementById('gl').style.display = 'none';
+else {
+  const s3 = document.createElement('script');
+  s3.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+  s3.onload = startGL; s3.onerror = scrubOnScroll;
+  document.head.appendChild(s3);
 }
 }
 </script>
