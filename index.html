@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince Paija Magar | Cybersecurity</title>
+<meta name="description" content="Prince Paija Magar, cybersecurity professional in Kathmandu. Email security, threat detection and network defence. Builder of Genjutsu, an AI phishing detection and honeypot system.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://princepaijamagar.com.np/">
+<meta property="og:title" content="Prince Paija Magar | Cybersecurity">
+<meta property="og:description" content="Email security, threat detection and network defence. Builder of Genjutsu, an AI phishing detection and honeypot system.">
+<meta property="og:image" content="https://princepaijamagar.com.np/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://princepaijamagar.com.np/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316212a'/%3E%3Cpath d='M12 46 26 22l8 13 6-9 12 20Z' fill='%23fff'/%3E%3Ccircle cx='46' cy='18' r='4' fill='%23d7263d'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE calm and clear; IDEA a flight over a real glacier, scrubbed by scroll, past prayer flags to the summit; PICTURE glacier drone footage behind floating 3D flags, crystal shield and stupa; COLOUR snow white, slate ink, prayer-flag blue and red; TYPE Unbounded + Inter */
+:root{color-scheme:light;--bg:#f4f6f5;--ink:#16212a;--muted:#4d5b63;--acc:#2346d1;--acc2:#d7263d;--panel:rgba(255,255,255,.78);--soft:rgba(35,70,209,.08);--line:rgba(22,33,42,.1);--shadow:rgba(20,40,70,.4);--rad:22px;--disp:"Unbounded",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--dw:600;--ls:-.02em}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);overflow-x:clip}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--disp);line-height:1.08;margin:0;text-wrap:balance;font-weight:var(--dw)}
+h2{font-size:clamp(30px,4vw,46px)}
+h3{font-size:20px}
+p{margin:0 0 1em;max-width:62ch}
+
+.site-header{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:0;right:0;z-index:20;pointer-events:none}
+.nav-pill,.menu-card{pointer-events:auto;width:min(440px,100% - 32px);margin-inline:auto;background:rgba(255,255,255,.86);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border-radius:18px;border:1px solid var(--line)}
+.nav-pill{display:flex;align-items:center;gap:22px;width:fit-content!important;height:54px;padding:0 8px 0 20px;box-shadow:0 10px 30px rgba(20,40,70,.14)}
+.nav-pill .me{font-family:var(--disp);font-weight:var(--dw);font-size:15px;color:var(--ink);text-decoration:none}
+.menu-btn{width:40px;height:40px;position:relative;background:none;border:0;cursor:pointer;padding:0;border-radius:12px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.menu-btn:hover{background:var(--soft)}
+.menu-btn:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.menu-btn span{position:absolute;left:11px;right:11px;height:1.6px;background:var(--ink);border-radius:2px;transition:transform .3s ease,top .3s ease,opacity .2s}
+.menu-btn span:nth-child(1){top:14px}.menu-btn span:nth-child(2){top:19px}.menu-btn span:nth-child(3){top:24px}
+.site-header.open .menu-btn span:nth-child(1){top:19px;transform:rotate(45deg)}
+.site-header.open .menu-btn span:nth-child(2){opacity:0}
+.site-header.open .menu-btn span:nth-child(3){top:19px;transform:rotate(-45deg)}
+.menu-card{width:min(320px,100% - 32px)!important;margin-top:10px;padding:10px 20px 20px;box-shadow:0 24px 60px rgba(20,40,70,.22);opacity:0;visibility:hidden;transform:translateY(-10px) scale(.98);transform-origin:top center;transition:opacity .25s ease,transform .25s ease,visibility 0s linear .25s;max-height:calc(100vh - 120px);overflow-y:auto}
+.site-header.open .menu-card{opacity:1;visibility:visible;transform:none;transition:opacity .25s ease,transform .25s ease,visibility 0s}
+.menu-card ul{list-style:none;margin:0;padding:0}
+.menu-card li a{display:block;padding:10px 0;font-family:var(--disp);font-size:17px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .15s,padding .15s;border-bottom:1px solid var(--line)}
+.menu-card li:last-child a{border-bottom:0}
+.menu-card li a:hover,.menu-card li a:focus-visible{color:var(--acc);padding-left:6px}
+.menu-cta{width:100%;justify-content:center;margin-top:16px;min-height:46px;font-size:15px}
+@media(max-width:700px){.nav-pill{height:52px;padding:0 6px 0 18px}.menu-card li a{font-size:16px;padding:9px 0}}
+@media(prefers-reduced-motion:reduce){.menu-card,.menu-btn span{transition:none}}
+#bgv{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;background:#dfe8ee}
+.veil{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(to top,rgba(244,246,245,.8),rgba(244,246,245,0) 45%),linear-gradient(to right,rgba(244,246,245,.6),rgba(244,246,245,0) 60%)}
+.hero h1{text-shadow:0 2px 30px rgba(255,255,255,.6)}
+@media(prefers-reduced-motion:reduce){#gl{display:none}}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+main{position:relative;z-index:1}
+.band{min-height:100vh;display:flex;align-items:center;padding:96px max(5vw,16px)}
+.band>.card{width:100%;max-width:640px}
+.band.r>.card{margin-left:auto}
+.card{background:var(--panel);backdrop-filter:blur(16px) saturate(1.15);-webkit-backdrop-filter:blur(16px) saturate(1.15);border-radius:var(--rad);padding:clamp(24px,4vw,46px);box-shadow:0 40px 80px -40px var(--shadow);border:1px solid var(--line)}
+.card>h2{margin-bottom:22px}
+.hero{align-items:flex-end;padding-bottom:clamp(48px,10vh,110px)}
+.hero h1{font-size:clamp(46px,8.4vw,112px);max-width:11ch;letter-spacing:var(--ls)}
+.hero .where{color:var(--acc);font-weight:600;margin:0 0 14px}
+.hero .tag{font-size:clamp(18px,1.8vw,22px);color:var(--muted);margin-top:20px;max-width:34ch}
+.muted{color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.facts b{display:block;font-family:var(--disp);font-weight:var(--dw);font-size:21px;line-height:1.2}
+.facts span{color:var(--muted);font-size:15px}
+.pipe{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0;padding:0;list-style:none}
+.pipe li{padding:7px 13px;border-radius:999px;background:var(--soft);font-size:14px}
+.pipe li.trap{background:var(--acc2);color:#fff}
+.trio{display:grid;gap:18px;margin-top:8px}
+.trio div{padding-left:16px;border-left:3px solid var(--acc)}
+.trio div:nth-child(2){border-color:var(--acc2)}
+.trio p{color:var(--muted);font-size:16px;margin:6px 0 0}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:999px;background:var(--acc);color:#fff;font-weight:600;text-decoration:none}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:18px;padding:16px 0;border-top:1px solid var(--line)}
+.row h3{font-size:19px}
+.row small{display:block;color:var(--acc);font-size:13px;margin-top:4px}
+.row p{margin:0;color:var(--muted);font-size:15.5px}
+.tl{list-style:none;margin:0 0 30px;padding:0;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 22px}
+.tl li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.tl li.top::before{background:var(--acc)}
+.tl time{color:var(--acc);font-size:14px;font-weight:600;white-space:nowrap}
+.tl h3{margin:2px 0 4px;font-size:19px}
+.tl p{color:var(--muted);margin:0;font-size:15.5px}
+.sub{font-family:var(--body);font-size:15px;font-weight:600;color:var(--muted);margin:22px 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{padding:6px 12px;border-radius:8px;background:var(--soft);font-size:14.5px}
+.reach{display:grid;gap:16px;margin:26px 0}
+.reach dt{color:var(--muted);font-size:14px}
+.reach dd{margin:2px 0 0;font-family:var(--disp);font-weight:var(--dw);font-size:clamp(19px,2.2vw,24px);overflow-wrap:anywhere}
+.reach dd a{color:var(--ink);text-decoration-color:var(--acc)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+footer{position:relative;z-index:1;padding:22px max(5vw,16px);color:var(--muted);font-size:14px}
+@media(max-width:700px){.band{min-height:auto;padding:70vh 14px 40px}.band.hero{min-height:100vh;padding:0 16px 56px}.row{grid-template-columns:minmax(0,1fr);gap:4px}.facts{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<video id="bgv" src="glacier.mp4" poster="poster.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+<div class="veil"></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<header class="site-header">
+  <div class="nav-pill">
+    <a class="me" href="#top">Prince Magar</a>
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="menu-card" id="site-menu" aria-label="Main">
+    <ul><li><a href="#about">About</a></li><li><a href="#genjutsu">Genjutsu</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a class="btn menu-cta" href="#contact">Get in touch</a>
+  </nav>
+</header>
+<main>
+<section class="band hero" id="top" data-s>
+  <div>
+    <h1>Prince Paija Magar</h1>
+    <p class="tag">I build systems that catch attackers before they reach your inbox.</p>
+  </div>
+</section>
+
+<section class="band r" id="about" data-s><div class="card">
+  <h2>Networks first, then the people who attack them.</h2>
+  <p>I am a cybersecurity professional based in Kathmandu, focused on email security, threat detection and network defence. My work combines secure system design with hands-on offensive testing, with the aim of stopping attacks before they reach users.</p>
+  <p>My experience is grounded in building production-style systems. I designed and developed Genjutsu, a nine-layer phishing detection and honeypot platform deployed on Google Cloud and Cloudflare, and have built applied projects in AI, IoT and web development. I am proficient with industry tools including Nmap, Wireshark, Burp Suite and Metasploit, and hold four AWS Academy certifications, including Cloud Security Foundations, along with RCNA Routing &amp; Switching and WLAN.</p>
+  <p>I am currently pursuing an MBA in International Business and Project Management to complement my technical background. My goal is to contribute to a security operations team, and in the longer term to build security products and capability for organisations in Nepal.</p>
+  <div class="facts">
+    <div><b>First Class</b><span>BSc (Hons), Networking &amp; IT Security</span></div>
+    <div><b>4× AWS</b><span>Cloud Foundations, Security, Operations, Architecting</span></div>
+    <div><b>SOC &amp; SIEM</b><span>Where I'm taking my career next</span></div>
+    <div><b>MBA</b><span>International Business &amp; Project Management, in progress</span></div>
+  </div>
+</div></section>
+
+<section class="band" id="genjutsu" data-s><div class="card">
+  <h2>Genjutsu</h2>
+  <p class="muted">An AI-powered phishing detection and honeypot system for Gmail. It scans every incoming email through nine layers of checks, flags dangerous messages in real time, and replies to scammers with an AI decoy that draws out their intent.</p>
+  <ul class="pipe" aria-label="What every email passes through">
+    <li>Gmail API, OAuth 2.0</li><li>SPF / DKIM / DMARC</li><li>Naive Bayes classifier</li><li>NLP signals</li><li>Google Safe Browsing</li><li>URL scanning</li><li>Attachment scanning</li><li class="trap">“Nami” AI honeypot</li><li>Telegram alerts</li>
+  </ul>
+  <div class="trio">
+    <div><h3>Detect</h3><p>Every incoming mail is checked for spoofed senders, poisoned links, risky attachments and scam language, then scored.</p></div>
+    <div><h3>Deceive</h3><p>Nami, a LLaMA-3.3-70B persona on Groq, replies to scammers and wastes their time while the system learns from them.</p></div>
+    <div><h3>Govern</h3><p>A three-role admin portal with PDF reports, running on Cloud Run, Cloudflare Workers and PostgreSQL.</p></div>
+  </div>
+  <p style="margin:26px 0 0"><a class="btn" href="https://genjutsu.org">Visit genjutsu.org</a></p>
+</div></section>
+
+<section class="band r" id="projects" data-s><div class="card">
+  <h2>Other things I've built</h2>
+  <div class="row"><div><h3>Nami</h3><small>Ollama, Llama 3.1 8B, ChromaDB</small></div><p>A private, bilingual Nepali–English voice assistant running fully on my MacBook, with long-term memory and an iPhone client over Tailscale.</p></div>
+  <div class="row"><div><h3>Penetration test simulation</h3><small>Metasploit, Kali Linux</small></div><p>Hid a Meterpreter payload inside an image, delivered it through a simulated phishing email, then monitored, exfiltrated test data and covered tracks, before investigating the same attack from the victim's side.</p></div>
+  <div class="row"><div><h3>phish_lab</h3><small>Python, Flask</small></div><p>A custom phishing simulation framework built for my ethical hacking module, to show how campaigns are run and caught.</p></div>
+  <div class="row"><div><h3>Mero Sathi</h3><small>Firebase, Leaflet, WebRTC</small></div><p>A progressive web app for couples across Kathmandu Valley, with live maps, calling and an admin dashboard.</p></div>
+  <div class="row"><div><h3>AI desk companion</h3><small>ESP32, Groq, ElevenLabs</small></div><p>A small robot that talks back, with an OLED face, servo movement and its own battery.</p></div>
+  <div class="row"><div><h3>Rain Safe Hanger</h3><small>ESP8266, rain sensor</small></div><p>An IoT system that detects rain in real time and rotates outdoor clothes hangers under cover, with a Telegram alert.</p></div>
+  <div class="row"><div><h3>Printer e-commerce site</h3><small>HTML, CSS, JavaScript</small></div><p>A seven-page online store for printers with interactive shopping features and dynamic content.</p></div>
+  <div class="row"><div><h3>Knight's Table</h3><small>Web</small></div><p>A chess web app for playing in the browser.</p></div>
+</div></section>
+
+<section class="band" id="education" data-s><div class="card">
+  <h2>Education</h2>
+  <ol class="tl">
+    <li class="top"><time>In progress</time><h3>MBA</h3><p>Specialising in International Business Management and Project Management.</p></li>
+    <li><time>2023 – 2026</time><h3>BSc (Hons) Computer Networking &amp; IT Security</h3><p>First Class Honours. Islington College, Kathmandu, awarded by London Metropolitan University.</p></li>
+    <li><time>2021 – 2022</time><h3>+2 Science</h3><p>Gorkha International Public Secondary School, National Examination Board.</p></li>
+  </ol>
+  <h2>Experience</h2>
+  <ol class="tl">
+    <li class="top"><time>Mar – Oct 2026</time><h3>Robo Tutor, ING Skill Academy</h3><p>Taught robotics and electronics to Grade 1–8 students across partner schools in Kathmandu, guiding block-based and Python/C++ programming on Arduino and ESP32.</p></li>
+    <li><time>Aug – Nov 2025</time><h3>Networking Assistant Intern, Network Store Pvt. Ltd.</h3><p>Set up, configured and maintained routers, switches and access points, and diagnosed LAN/WAN connectivity issues alongside senior engineers.</p></li>
+  </ol>
+</div></section>
+
+<section class="band r" id="toolkit" data-s><div class="card">
+  <h2>Toolkit</h2>
+  <p class="sub">Security</p>
+  <div class="tags"><span>Penetration testing</span><span>Malware analysis</span><span>Risk analysis</span><span>Cryptography</span><span>Network monitoring</span></div>
+  <p class="sub">Security tools</p>
+  <div class="tags"><span>Nmap</span><span>Wireshark</span><span>Burp Suite</span><span>Metasploit</span><span>Kali Linux</span></div>
+  <p class="sub">Networking</p>
+  <div class="tags"><span>Routing protocols</span><span>VLANs</span><span>IP addressing</span><span>ACLs</span><span>NAT / PAT</span><span>IPsec VPN</span><span>Cisco Packet Tracer</span></div>
+  <p class="sub">Build</p>
+  <div class="tags"><span>Python</span><span>JavaScript</span><span>HTML / CSS</span><span>Node.js / Express</span><span>PostgreSQL</span><span>Docker</span><span>Git</span><span>Google Cloud Run</span><span>Cloudflare Workers</span><span>Firebase</span><span>ESP32</span><span>Figma</span></div>
+  <p class="sub">Certifications</p>
+  <div class="tags"><span>AWS Academy Cloud Foundations</span><span>AWS Academy Cloud Security Foundations</span><span>AWS Academy Cloud Operations</span><span>AWS Academy Cloud Architecting</span><span>RCNA Routing &amp; Switching</span><span>RCNA WLAN</span><span>Web Monitoring Program</span></div>
+</div></section>
+
+<section class="band" id="contact" data-s><div class="card">
+  <h2>Let's make something harder to break.</h2>
+  <p class="muted">Open to SOC, SIEM and security engineering roles, and to people building things for Nepal.</p>
+  <dl class="reach">
+    <div><dt>Email</dt><dd><a href="mailto:princemagar338@gmail.com">princemagar338@gmail.com</a></dd></div>
+    <div><dt>Phone</dt><dd><a href="tel:+9779706077264">+977 9706077264</a></dd></div>
+    <div><dt>Location</dt><dd>Kathmandu, Nepal</dd></div>
+  </dl>
+  <div class="links"><a class="btn" href="https://github.com/princemagar34">GitHub</a><a class="btn ghost" href="https://genjutsu.org">genjutsu.org</a></div>
+</div></section>
+</main>
+<footer>© 2026 Prince Paija Magar</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+{
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const secs = [...document.querySelectorAll('[data-s]')];
+let marks = [], target = 0, prog = 0;
+function measure(){ marks = secs.map(s => Math.max(0, s.offsetTop + s.offsetHeight / 2 - innerHeight / 2)); marks[0] = 0; read(); }
+function read(){
+  const y = scrollY; let f = marks.length - 1;
+  for (let i = 0; i < marks.length - 1; i++) {
+    if (y < marks[i + 1]) { f = i + Math.max(0, (y - marks[i]) / Math.max(1, marks[i + 1] - marks[i])); break; }
+  }
+  target = f;
+}
+addEventListener('scroll', read, {passive:true});
+addEventListener('resize', measure);
+addEventListener('load', measure);
+measure();
+
+
+const hdr = document.querySelector('.site-header'), mbtn = hdr.querySelector('.menu-btn');
+const setMenu = open => { hdr.classList.toggle('open', open); mbtn.setAttribute('aria-expanded', open); mbtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); };
+mbtn.addEventListener('click', () => setMenu(!hdr.classList.contains('open')));
+hdr.querySelectorAll('.menu-card a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+addEventListener('keydown', e => { if (e.key === 'Escape' && hdr.classList.contains('open')) { setMenu(false); mbtn.focus(); } });
+document.addEventListener('click', e => { if (!hdr.contains(e.target)) setMenu(false); });
+const bgv = document.getElementById('bgv');
+let unlocked = false;
+const unlock = () => { if (unlocked) return; unlocked = true; const p = bgv.play(); if (p) p.then(() => bgv.pause()).catch(() => {}); };
+addEventListener('touchstart', unlock, {once:true, passive:true}); addEventListener('pointerdown', unlock, {once:true});
+window.onProg = (f, n) => { if (!bgv.duration || bgv.seeking) return; const t = Math.min(bgv.duration - .05, f / n * bgv.duration); if (Math.abs(bgv.currentTime - t) > .04) bgv.currentTime = t; };
+if (!window.THREE) addEventListener('scroll', () => onProg(target, secs.length - 1), {passive:true});
+function build(T, scene, R){
+  scene.background = null;
+  scene.add(new T.HemisphereLight(0xffffff, 0xbfcad0, .85));
+  const sun = new T.DirectionalLight(0xffffff, .75);
+  sun.position.set(40, 60, 30);   sun.target.position.set(0, 0, -40); scene.add(sun, sun.target);
+
+  /* the real glacier video sits behind everything */
+  const H = (x, z) => {
+    const side = Math.max(0, Math.abs(x) - 9) / 28;
+    let h = Math.pow(side, 1.35) * 30 * (.75 + .25 * Math.sin(z * .05 + x * .02));
+    h += 2.4 * Math.sin(x * .21 + z * .13) + 1.4 * Math.sin(x * .5 - z * .31);
+    h += Math.max(0, -z - 115) * 1.1 * (1 + .35 * Math.sin(x * .09));
+    return Math.max(-.5, h);
+  };
+  /* prayer flags strung across the valley */
+  const FC = [0x2346d1, 0xffffff, 0xd7263d, 0x1f9d55, 0xf2c230];
+  const flags = [];
+  const flagGeo = new T.PlaneGeometry(1.15, .85); flagGeo.translate(0, -.45, 0);
+  [[28, 13], [6, 12], [-48, 14], [-96, 15]].forEach(([z, y0], s) => {
+    const n = 26, a = new T.Vector3(-17, y0 + 4, z), b = new T.Vector3(17, y0 + 3, z - 4);
+    const pts = [];
+    for (let k = 0; k <= n; k++) {
+      const t = k / n, p = a.clone().lerp(b, t); p.y -= Math.sin(t * Math.PI) * 4; pts.push(p);
+      if (k > 0 && k < n) {
+        const m = new T.Mesh(flagGeo, new T.MeshStandardMaterial({color:FC[k % 5], side:T.DoubleSide, roughness:.8}));
+        m.position.copy(p); m.castShadow = true; m.userData.o = k * .6 + s; flags.push(m); scene.add(m);
+      }
+    }
+    scene.add(new T.Line(new T.BufferGeometry().setFromPoints(pts), new T.LineBasicMaterial({color:0x3b4650})));
+  });
+
+  /* the network from the first version: nodes and links strung through the whole flight */
+  const rnd = (a, b) => a + Math.random() * (b - a);
+  const nodes = Array.from({length:70}, () => new T.Vector3(rnd(-24, 24), rnd(5, 17), rnd(-105, 14)));
+  const edges = [];
+  nodes.forEach((n, i) => {
+    nodes.map((m, j) => [j, n.distanceTo(m)]).filter(d => d[0] !== i).sort((a, b) => a[1] - b[1]).slice(0, 2)
+      .forEach(([j]) => { if (!edges.some(e => e[0] === j && e[1] === i)) edges.push([i, j]); });
+  });
+  const lp = [];
+  edges.forEach(([a, b]) => lp.push(nodes[a].x, nodes[a].y, nodes[a].z, nodes[b].x, nodes[b].y, nodes[b].z));
+  const lg = new T.BufferGeometry(); lg.setAttribute('position', new T.Float32BufferAttribute(lp, 3));
+  scene.add(new T.LineSegments(lg, new T.LineBasicMaterial({color:0x16212a, transparent:true, opacity:.4})));
+  scene.add(new T.Points(new T.BufferGeometry().setFromPoints(nodes), new T.PointsMaterial({color:0x16212a, size:.55})));
+
+  /* the trap: lattice shield around the inbox core; red attacks stop at its edge */
+  const core = new T.Vector3(7, 11, -30);
+  const lattice = new T.Mesh(new T.IcosahedronGeometry(4.2, 1), new T.MeshBasicMaterial({color:0x16212a, wireframe:true, transparent:true, opacity:.55}));
+  lattice.position.copy(core); scene.add(lattice);
+  const coreBall = new T.Mesh(new T.SphereGeometry(1, 32, 20), new T.MeshStandardMaterial({color:0xffffff, roughness:.35}));
+  coreBall.position.copy(core); scene.add(coreBall);
+
+  /* packets: blue traffic runs the links, red attacks dive at the core */
+  const P = 130, pp = new Float32Array(P * 3), pc = new Float32Array(P * 3);
+  const packets = Array.from({length:P}, (_, i) => ({e:edges[i % edges.length], t:Math.random(), s:rnd(.15, .45), bad:i % 5 === 0}));
+  const pg = new T.BufferGeometry();
+  pg.setAttribute('position', new T.BufferAttribute(pp, 3)); pg.setAttribute('color', new T.BufferAttribute(pc, 3));
+  scene.add(new T.Points(pg, new T.PointsMaterial({size:.42, vertexColors:true})));
+  const blueC = new T.Color(0x2346d1), redC = new T.Color(0xd7263d);
+  const near = nodes.filter(n => n.distanceTo(core) < 26);
+
+  /* projects: six floating faceted stones in flag colours */
+  const stones = FC.concat([0x8a96a0]).map((c, i) => {
+    const m = new T.Mesh(new T.DodecahedronGeometry(1.1 + (i % 3) * .35, 0), new T.MeshStandardMaterial({color:c, flatShading:true, roughness:.7}));
+    const a = i / 6 * Math.PI * 2; m.userData = {a, y:10 + (i % 2) * 2.5};
+    m.castShadow = true; scene.add(m); return m;
+  });
+  const stoneC = new T.Vector3(-7, 0, -62);
+
+  const keys = [
+    {p:[0, 15, 72], l:[0, 10, 0], c:[0, 10, 0]},
+    {p:[-3, 13, 50], l:[7, 12, 22], c:[0, 12, 22]},
+    {p:[-2, 12, -6], l:[-1, 10, -30], c:[7, 11, -30]},
+    {p:[1, 12, -40], l:[2, 10, -62], c:[-7, 11, -62]},
+    {p:[-1, 11, -68], l:[1, 7, -88], c:[9, 7, -88]},
+    {p:[4, 22, -92], l:[14, 18, -135], c:[4, 18, -135]},
+    {p:[0, 44, -70], l:[-14, 24, -165], c:[0, 24, -165]}
+  ];
+  function update(t, f, dt){
+    flags.forEach(m => { m.rotation.y = Math.sin(t * 2.4 + m.userData.o) * .5; m.rotation.x = Math.sin(t * 3.1 + m.userData.o) * .15; });
+    lattice.rotation.y = t * .25; lattice.rotation.x = t * .1;
+    packets.forEach((p, i) => {
+      let x, y, z, c = blueC;
+      if (p.bad) {
+        p.t += dt * p.s * .7; if (p.t > 1) { p.t = 0; p.from = near[(Math.random() * near.length) | 0]; }
+        const from = p.from || (p.from = near[i % near.length]), d = core.clone().sub(from), stop = 1 - 4.4 / d.length(), k = Math.min(p.t, stop);
+        x = from.x + d.x * k; y = from.y + d.y * k; z = from.z + d.z * k; c = redC;
+      } else {
+        p.t += dt * p.s; if (p.t > 1) { p.t = 0; p.e = edges[(Math.random() * edges.length) | 0]; }
+        const a = nodes[p.e[0]], b = nodes[p.e[1]];
+        x = a.x + (b.x - a.x) * p.t; y = a.y + (b.y - a.y) * p.t; z = a.z + (b.z - a.z) * p.t;
+      }
+      pp[i * 3] = x; pp[i * 3 + 1] = y; pp[i * 3 + 2] = z; pc[i * 3] = c.r; pc[i * 3 + 1] = c.g; pc[i * 3 + 2] = c.b;
+    });
+    pg.attributes.position.needsUpdate = true; pg.attributes.color.needsUpdate = true;
+    stones.forEach((m, i) => { const u = m.userData, a = u.a + t * .2; m.position.set(stoneC.x + Math.cos(a) * 6, u.y + Math.sin(t * 1.2 + i) * .6, stoneC.z + Math.sin(a) * 6); m.rotation.set(t * .4 + i, t * .3, 0); });
+  }
+  return {keys, update};
+}
+
+
+if (window.THREE) {
+  const T = THREE, cv = document.getElementById('gl');
+  const R = new T.WebGLRenderer({canvas:cv, antialias:true, alpha:true});
+  R.setPixelRatio(Math.min(devicePixelRatio, 2));
+  R.setClearColor(0, 0);
+  const scene = new T.Scene();
+  const S = build(T, scene, R);
+  const cam = S.cam || new T.PerspectiveCamera(50, 1, .1, 500);
+  const mob = () => innerWidth < 700;
+  function size(){
+    const w = innerWidth, h = innerHeight; R.setSize(w, h, false);
+    if (cam.isPerspectiveCamera) { cam.aspect = w / h; cam.fov = mob() ? 62 : 50; }
+    else { const v = S.view || 40; cam.left = -v * w / h / 2; cam.right = v * w / h / 2; cam.top = v / 2; cam.bottom = -v / 2; }
+    cam.updateProjectionMatrix();
+  }
+  addEventListener('resize', size); size();
+  const A = new T.Vector3(), B = new T.Vector3(), L = new T.Vector3(), M = new T.Vector3();
+  const ease = x => x < .5 ? 2 * x * x : 1 - (-2 * x + 2) ** 2 / 2;
+  let last = performance.now(), time = 0;
+  function frame(now){
+    requestAnimationFrame(frame);
+    const dt = Math.min(.05, (now - last) / 1000); last = now; if (!reduce) time += dt;
+    prog += (target - prog) * (reduce ? 1 : 1 - Math.exp(-dt * 4.5));
+    const K = S.keys, n = K.length - 1, f = Math.min(n, Math.max(0, prog)), i = Math.min(n - 1, Math.floor(f)), t = ease(f - i);
+    const off = mob() ? 0 : 1;
+    A.fromArray(K[i].p); B.fromArray(K[i + 1].p); cam.position.lerpVectors(A, B, t);
+    L.fromArray(K[i].l); M.fromArray(K[i + 1].l); L.lerp(M, t);
+    if (!off) { A.fromArray(K[i].c || K[i].l); B.fromArray(K[i + 1].c || K[i + 1].l); L.lerpVectors(A, B, t); }
+    if (S.cam) cam.position.copy(L).add(S.iso);
+    cam.lookAt(L);
+    if (K[i].z) { cam.zoom = K[i].z + (K[i + 1].z - K[i].z) * t; cam.updateProjectionMatrix(); }
+    window.onProg && onProg(f, n); S.update(time, f, dt);
+    R.render(scene, cam);
+  }
+  requestAnimationFrame(frame);
+}
+}
+</script>
+</body>
+</html>
