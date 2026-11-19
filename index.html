@@ -323,7 +323,7 @@ function build(T, scene, R){
   const FC = [0x2346d1, 0xffffff, 0xd7263d, 0x1f9d55, 0xf2c230];
   const flags = [];
   const flagGeo = new T.PlaneGeometry(1.15, .85); flagGeo.translate(0, -.45, 0);
-  [[28, 13], [17, 12.5], [6, 12], [-20, 13], [-48, 14], [-72, 14.5], [-96, 15]].forEach(([z, y0], s) => {
+  [[28, 13], [6, 12], [-48, 14], [-96, 15]].forEach(([z, y0], s) => {
     const n = 26, a = new T.Vector3(-17, y0 + 4, z), b = new T.Vector3(17, y0 + 3, z - 4);
     const pts = [];
     for (let k = 0; k <= n; k++) {
@@ -338,7 +338,7 @@ function build(T, scene, R){
 
   /* the network from the first version: nodes and links strung through the whole flight */
   const rnd = (a, b) => a + Math.random() * (b - a);
-  const nodes = Array.from({length:150}, () => new T.Vector3(rnd(-24, 24), rnd(5, 17), rnd(-105, 14)));
+  const nodes = Array.from({length:70}, () => new T.Vector3(rnd(-24, 24), rnd(5, 17), rnd(-105, 14)));
   const edges = [];
   nodes.forEach((n, i) => {
     nodes.map((m, j) => [j, n.distanceTo(m)]).filter(d => d[0] !== i).sort((a, b) => a[1] - b[1]).slice(0, 2)
@@ -358,7 +358,7 @@ function build(T, scene, R){
   coreBall.position.copy(core); scene.add(coreBall);
 
   /* packets: blue traffic runs the links, red attacks dive at the core */
-  const P = 280, pp = new Float32Array(P * 3), pc = new Float32Array(P * 3);
+  const P = 130, pp = new Float32Array(P * 3), pc = new Float32Array(P * 3);
   const packets = Array.from({length:P}, (_, i) => ({e:edges[i % edges.length], t:Math.random(), s:rnd(.15, .45), bad:i % 5 === 0}));
   const pg = new T.BufferGeometry();
   pg.setAttribute('position', new T.BufferAttribute(pp, 3)); pg.setAttribute('color', new T.BufferAttribute(pc, 3));
