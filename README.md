@@ -18,7 +18,7 @@ A single-page portfolio with a scroll-driven background:
 - Plain HTML, CSS and JavaScript in one `index.html`
 - [Three.js r128](https://threejs.org/) from cdnjs
 - Video compressed with FFmpeg (H.264), loaded into memory as a blob so scroll scrubbing can seek even where the host ignores HTTP range requests
-- One-page CV in `Prince_Paija_Magar_CV.pdf`, built with ReportLab
+- CV in `Prince_Paija_Magar_CV.pdf`
 - Hosted on Cloudflare Pages, with security headers set in `_headers`
 
 ## Run locally
