@@ -293,16 +293,20 @@ document.addEventListener('click', e => { if (!hdr.contains(e.target)) setMenu(f
 const bgv = document.getElementById('bgv');
 /* Cloudflare answers Range requests with the full file, so the browser can't seek a streamed video.
    Load it into memory once and play from a local blob URL so scroll-scrubbing works. */
-/* Phones and data-saver connections get the still poster only: no 9 MB video, no 3D. */
+/* Data-saver and 2G connections get the still poster only: no 9 MB video, no 3D. */
 const conn = navigator.connection || {};
-const lite = matchMedia('(max-width:700px)').matches || conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '');
+const lite = !!conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '');
 if (!lite) fetch(bgv.dataset.src).then(r => r.ok ? r.blob() : Promise.reject(r.status)).then(b => {
-  bgv.addEventListener('loadedmetadata', () => onProg(target, secs.length - 1), {once:true});
+  bgv.addEventListener('loadedmetadata', () => {
+    /* a muted inline play-then-pause makes mobile browsers (iOS Safari) paint seeked frames */
+    const p = bgv.play(); if (p) p.then(() => { bgv.pause(); onProg(target, secs.length - 1); }).catch(() => {});
+    onProg(target, secs.length - 1);
+  }, {once:true});
   bgv.src = URL.createObjectURL(b);
 }).catch(() => {});
 let unlocked = false;
-const unlock = () => { if (unlocked || !bgv.src) return; unlocked = true; const p = bgv.play(); if (p) p.then(() => bgv.pause()).catch(() => {}); };
-addEventListener('touchstart', unlock, {once:true, passive:true}); addEventListener('pointerdown', unlock, {once:true});
+const unlock = () => { if (unlocked || !bgv.src) return; unlocked = true; removeEventListener('touchstart', unlock); removeEventListener('pointerdown', unlock); const p = bgv.play(); if (p) p.then(() => bgv.pause()).catch(() => {}); };
+addEventListener('touchstart', unlock, {passive:true}); addEventListener('pointerdown', unlock);
 window.onProg = (f, n) => { if (!bgv.duration || bgv.seeking) return; const t = Math.min(bgv.duration - .05, f / n * bgv.duration); if (Math.abs(bgv.currentTime - t) > .04) bgv.currentTime = t; };
 const scrubOnScroll = () => addEventListener('scroll', () => onProg(target, secs.length - 1), {passive:true});
 function build(T, scene, R){

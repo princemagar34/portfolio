@@ -11,7 +11,7 @@ A single-page portfolio with a scroll-driven background:
 - **Glacier flight:** real drone footage that plays forward and backward with the scroll position.
 - **3D layer (Three.js):** prayer flags, a live packet network, and a lattice "trap" that stops red attack packets, illustrating Genjutsu, my AI phishing detection and honeypot system.
 - **Sections:** About, Genjutsu, Inside Genjutsu (pipeline, results, SIEM export), phish_lab case study, Projects, Education & Experience, Toolkit, Contact.
-- **Lite mode:** phones and data-saver connections get the still poster only, with no video or 3D, so the page loads fast on mobile data.
+- **Lite mode:** data-saver and 2G connections get the still poster only, with no video or 3D.
 
 ## Stack
 
