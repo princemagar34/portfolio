@@ -2,7 +2,7 @@
 
 Personal portfolio of **Prince Paija Magar**: networking, web design and cybersecurity, based in Kathmandu.
 
-**Live:** https://princepaijamagar.pages.dev · https://princepaijamagar.com.np
+**Live:** https://princepaijamagar.com.np · https://princepaijamagar.com.np
 
 ## What it is
 
